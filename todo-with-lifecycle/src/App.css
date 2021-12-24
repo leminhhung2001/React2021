@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* HomePage */
+.home {
+  margin-top: 100px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+/* Item */
+.item {
+  list-style-type: none;
+  border-top: 1px solid steelblue;
+  padding: 10px 0;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
