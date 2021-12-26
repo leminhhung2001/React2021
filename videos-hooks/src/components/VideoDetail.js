@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import TimeoutCpn from "../hooks/useTimeout";
 
 const VideoDetail = ({ video }) => {
   if (!video) {
@@ -9,12 +10,15 @@ const VideoDetail = ({ video }) => {
 
   return (
     <div>
-      <div className="ui embed">
-        <iframe title="video player" src={videoSrc} />
+      <div className='ui embed'>
+        <iframe title='video player' src={videoSrc} />
       </div>
-      <div className="ui segment">
-        <h4 className="ui header">{video.snippet.title}</h4>
+      <div className='ui segment'>
+        <h4 className='ui header'>{video.snippet.title}</h4>
         <p>{video.snippet.description}</p>
+      </div>
+      <div>
+        <TimeoutCpn />
       </div>
     </div>
   );
